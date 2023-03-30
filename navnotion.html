@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Alkatra', cursive;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #836953;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> home</a>
+		<a id="plan" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> plan</a>
+		<a id="cooking" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-utensils"></i> cooking</a>
+		<a id="cleaning" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-utensils"></i> cleaning</a>
+		<a id="workout" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-dumbbell"></i> workout</a>
+		<a id="academia" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> academia</a>
+		<a id="shopping" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-cart-shopping"></i> shopping</a>
+		<a id="money" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-credit-card"></i> money</a>
+		<a id="travel" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-map-location-dot"></i> travel</a>
+
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/f7c945e79ac0432191c6e390c723c532", '_blank').focus();
+			else if (id == "plan")
+				window.open("https://www.notion.so/8d3e277265d6491d9495399e5708ebb4?pvs=4#72af057a5e4249bca9c11a06f5765b50", '_blank').focus();
+			else if (id == "cooking")
+				window.open("https://www.notion.so/1e257fe2dfb64402b264b8f88251f299", '_blank').focus();
+			else if (id == "cleaning")
+				window.open("https://www.notion.so/23ce8813f2c741959a163d32024920e7", '_blank').focus();
+			else if (id == "workout")
+				window.open("https://www.notion.so/75e35b8b544b48399d7d297759c4ee83", '_blank').focus();
+			else if (id == "academia")
+				window.open("https://www.notion.so/dbef6e586c084d1295ed814aa918fd40", '_blank').focus();
+			else if (id == "shopping")
+				window.open("https://www.notion.so/3f06ff4adce84ee099548e7cd9279d7a", '_blank').focus();
+			else if (id == "money")
+				window.open("https://www.notion.so/ee2998a01561417d9613c9f5aa5fccd0", '_blank').focus();
+			else if (id == "travel")
+				window.open("https://www.notion.so/1205f72c6d884ab7be531f3ceb2fb260", '_blank').focus();
+			
+		}
+	</script>
+
+
+</body>
+
+</html>
